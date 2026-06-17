@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Alerts</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>CyberGuard</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="alerts.html" class="active">Alerts</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                </ul>
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="top-bar">
+                <h1>Security Alerts Management</h1>
+                <p>Monitor and manage cybersecurity incidents.</p>
+            </header>
+
+            <!-- Filter Form -->
+            <section class="filter-section">
+
+                <h2>Filter Alerts</h2>
+
+                <form class="alert-form" id="filterForm">
+
+                    <input type="text" id="searchInput" placeholder="Search Alert">
+
+                    <select id="severityFilter">
+                      <option value="all">All Severities</option>
+                      <option value="critical">Critical</option>
+                      <option value="high">High</option>
+                      <option value="medium">Medium</option>
+                      <option value="low">Low</option>
+                    </select>
+
+                    <button type="submit">Search</button>
+
+                </form>
+
+            </section>
+
+            <!-- Alert Cards -->
+            <section class="alert-cards">
+                <div class="alert-card" data-severity="critical">
+                  <h3>Malware Attack</h3>
+                  <p><strong>Severity:</strong> Critical</p>
+                  <p><strong>Status:</strong> Investigating</p>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+                </div>
+
+                <div class="alert-card" data-severity="high">
+                  <h3>Brute Force Attack</h3>
+                  <p><strong>Severity:</strong> High</p>
+                  <p><strong>Status:</strong> Blocked</p>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+                </div>
+
+                <div class="alert-card" data-severity="medium">
+                  <h3>Suspicious Login</h3>
+                  <p><strong>Severity:</strong> Medium</p>
+                  <p><strong>Status:</strong> Resolved</p>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+                </div>
+
+                <div class="alert-card" data-severity="low">
+                  <h3>Phishing Attempt</h3>
+                  <p><strong>Severity:</strong> Low</p>
+                  <p><strong>Status:</strong> Blocked</p>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+                </div>
+            </section>
+
+            <!-- Alert Log Table -->
+            <section class="recent-alerts">
+
+                <h2>Alert Log</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Threat</th>
+                            <th>Severity</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>001</td>
+                            <td>Malware Attack</td>
+                            <td>Critical</td>
+                            <td>Investigating</td>
+                            <td>10/06/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>Brute Force Attack</td>
+                            <td>High</td>
+                            <td>Blocked</td>
+                            <td>10/06/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>Suspicious Login</td>
+                            <td>Medium</td>
+                            <td>Resolved</td>
+                            <td>09/06/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>004</td>
+                            <td>Phishing Attempt</td>
+                            <td>Low</td>
+                            <td>Blocked</td>
+                            <td>09/06/2026</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
